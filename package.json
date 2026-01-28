@@ -12,6 +12,7 @@
     "astro": "^5.16.15"
   },
   "devDependencies": {
+    "@fontsource-variable/inter": "^5.2.8",
     "@fontsource/poppins": "^5.2.7",
     "@tailwindcss/vite": "^4.1.18",
     "prettier": "^3.8.1",

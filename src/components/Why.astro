@@ -1,0 +1,52 @@
+---
+import data from "../data/index.json";
+const s = data.why;
+---
+
+<section class="why section">
+  <div class="container">
+    <!-- title -->
+    <h2 class="mb-6 section-title text-balance" set:html={s.title} />
+
+    <!-- list -->
+    <ul class="flex flex-col items-start justify-start gap-8 text-balance">
+      {s.list.map((item) => <li>{item.text}</li>)}
+    </ul>
+
+    <!-- subtitle -->
+    <h3
+      class="mt-6 mb-11 text-center text-[24px]/[1.2] font-semibold text-balance text-black">
+      {s.subtitle}
+    </h3>
+
+    <!-- cards -->
+    <ul class="flex flex-col gap-4 items-center justify-center">
+      {
+        s.cards.map((card) => (
+          // card
+          <li class="flex flex-col items-start justify-start gap-4 rounded-3xl bg-card p-4 font-inter">
+            {/* wrapper for img and title */}
+            <div class="flex items-center justify-start gap-3">
+              {/* card image */}
+              <img
+                src={card.img}
+                title={card.alt}
+                alt={card.alt}
+                width="40"
+                height="40"
+                loading="lazy"
+              />
+              {/* card title */}
+              <h4 class="text-black font-semibold text-[18px]/[1.4]">
+                {card.title}
+              </h4>
+            </div>
+
+            {/* card text */}
+            <p class="">{card.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>

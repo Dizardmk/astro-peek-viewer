@@ -6,5 +6,43 @@
       "title": "Try now",
       "link": "#"
     }
+  },
+  "why": {
+    "title": "<span class=\"gradient-text\">Why Do You Need</span> the Peekviewer Instagram Story Viewer?",
+    "list": [
+      {
+        "text": "When you access public pages and watch their stories, they know about it. Your icon appears at the bottom left corner, and the story creator can see it. It is hard to disagree that it's not always convenient, and it is the main reason why people search for an app to view Instagram stories anonymously."
+      },
+      {
+        "text": "Or when you log into Instagram and look through the feed or list of potential friends, you will see that many pages are hidden from you. It happens because they set their pages to private, and you need to follow them and get their approval before you can see their content."
+      }
+    ],
+    "subtitle": "So, when can Peekviewer be useful?",
+    "cards": [
+      {
+        "img": "/images/why/1.png",
+        "alt": "Boy emoji",
+        "title": "Track children",
+        "text": "Many teens limit who can view their Instagram stories – often excluding parents or family. Peekviewer offers a private way for parents to watch Instagram stories anonymously without registering an IG account."
+      },
+      {
+        "img": "/images/why/2.png",
+        "alt": "Man Technologist emoji",
+        "title": "Analyze competitors",
+        "text": "Anonymous Instagram story viewer services are extremely valuable for those who do business on Instagram. Such apps allow them to analyze their competitors and gather needed information anonymously."
+      },
+      {
+        "img": "/images/why/3.png",
+        "alt": "Kiss emoji",
+        "title": "Monitor influencers",
+        "text": "Want to understand how influencers engage with their audience? Peekviewer allows you to view stories, posts, and interaction patterns without logging in – perfect for marketers and agencies tracking campaigns, trends, or influencer partnerships."
+      },
+      {
+        "img": "/images/why/4.png",
+        "alt": "Eyes emoji",
+        "title": "Curiosity",
+        "text": "Whether you're looking into a public figure's profile or browsing trending content, sometimes you just want to explore Insta without leaving a trail. Peekviewer keeps things simple and private, so you can browse Instagram content with peace of mind."
+      }
+    ]
   }
 }

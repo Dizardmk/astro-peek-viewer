@@ -5,13 +5,14 @@
 
   /* FONTS */
   --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter Variable", sans-serif;
 
   /* COLORS */
   --color-body: #ffffff;
   --color-black: #000000;
   --color-white: #ffffff;
-  --color-accent: #005ee8;
   --color-gray: #55618a;
+  --color-accent: #005ee8;
   --color-card: #f6f6f9;
 }
 
@@ -21,7 +22,7 @@
   }
 
   body {
-    @apply bg-body font-poppins text-[16px]/[24px] font-normal text-gray;
+    @apply bg-body font-poppins text-base/normal font-normal text-gray xl:text-lg/normal;
   }
 
   button {
@@ -38,7 +39,11 @@
 }
 
 @utility section-title {
-  @apply text-center text-[28px]/[1.2] font-semibold xl:text-[36px]/[1.2];
+  @apply text-center text-[28px]/[1.2] font-semibold text-black xl:text-[36px]/[1.2];
+}
+
+@utility gradient-text {
+  @apply bg-linear-to-r from-[#4a55f4] to-[#2aafec] bg-clip-text text-transparent;
 }
 
 @utility btn {
