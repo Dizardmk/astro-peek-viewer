@@ -1,0 +1,8 @@
+.header {
+  background-image: radial-gradient(
+    circle at 50% 0,
+    #0049b5,
+    #002b6b 29%,
+    #1f1a22 54%
+  );
+}

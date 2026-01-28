@@ -1,1 +1,4 @@
+/* tailwindcss */
 @import "./vendors/tailwind.css";
+/* sections */
+@import "./sections/header.css";

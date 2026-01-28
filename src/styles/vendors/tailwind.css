@@ -7,10 +7,12 @@
   --font-poppins: "Poppins", sans-serif;
 
   /* COLORS */
-  --color-body: #f2f1ee;
+  --color-body: #ffffff;
   --color-black: #000000;
   --color-white: #ffffff;
   --color-accent: #005ee8;
+  --color-gray: #55618a;
+  --color-card: #f6f6f9;
 }
 
 @layer base {
@@ -19,7 +21,7 @@
   }
 
   body {
-    @apply bg-body font-poppins text-[16px]/[24px] font-normal text-black;
+    @apply bg-body font-poppins text-[16px]/[24px] font-normal text-gray;
   }
 
   button {
