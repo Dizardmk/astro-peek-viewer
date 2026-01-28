@@ -46,7 +46,7 @@
     ]
   },
   "how": {
-    "title": "<span class=\"gradient-text\">How to Use Instagram</span> Anonymous Account Viewer Peekviewer",
+    "title": "<span class=\"gradient-text\">How to Use<br class=\"md:hidden\"> Instagram</span> Anonymous Account Viewer Peekviewer",
     "text": "So, in a few words, what is Peekviewer? It is a secret Instagram story viewer that allows people to use their right to privacy and stay on the crest of events. A great everyday helper, so to speak. You can start using it in 3 simple steps.",
     "points": [
       {
@@ -62,5 +62,6 @@
         "text": "View private stories in a hidden mode."
       }
     ]
-  }
+  },
+  "advantages": {}
 }
