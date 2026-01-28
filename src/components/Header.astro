@@ -3,18 +3,23 @@ import data from "../data/index.json";
 const s = data.header;
 ---
 
-<header class="header max-md:pb-0! section bg-black text-white">
+<header class="header bg-black pt-24.25 text-white md:py-16 xl:py-34">
   <div class="container md:flex md:items-center md:justify-between md:gap-8">
     <!-- wrapper -->
     <div
-      class="flex flex-col items-start md:w-93.75 justify-start gap-8 md:shrink-0">
+      class="flex flex-col items-start justify-start gap-8 md:w-93.75 md:shrink-0 xl:w-118.5">
       <!-- title -->
-      <h1 class="section-title text-[32px]! max-md:mx-auto">{s.title}</h1>
+      <h1
+        class="section-title text-[32px] max-md:mx-auto md:text-left xl:text-[60px]">
+        {s.title}
+      </h1>
       <!-- text -->
-      <p class="text-[14px]/[1.4]">{s.text}</p>
+      <p class="text-[14px]/[1.4] text-balance md:text-base/normal">
+        {s.text}
+      </p>
       <!-- button -->
       <a
-        class="btn"
+        class="btn md:w-60"
         href={s.btn.link}
         target="_blank"
         rel="noopener noreferrer nofollow">
@@ -30,7 +35,7 @@ const s = data.header;
         srcset="/images/header/image-md.webp"
       />
       <img
-        class="max-md:mt-5 relative max-md:left-1/2 max-md:right-1/2 max-md:-ml-[50vw] max-md:-mr-[50vw] max-md:w-screen max-md:max-w-none md:size-auto"
+        class="relative max-md:right-1/2 max-md:left-1/2 max-md:mt-5 max-md:-mr-[50vw] max-md:-ml-[50vw] max-md:w-screen max-md:max-w-none md:size-auto xl:max-w-169.5"
         src="/images/header/image-sm.webp"
         title="iphone mockup with Peekviewer Instagram Story Viewer app"
         alt="iphone mockup with Peekviewer Instagram Story Viewer app"
