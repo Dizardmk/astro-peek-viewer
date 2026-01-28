@@ -44,5 +44,14 @@
         "text": "Whether you're looking into a public figure's profile or browsing trending content, sometimes you just want to explore Insta without leaving a trail. Peekviewer keeps things simple and private, so you can browse Instagram content with peace of mind."
       }
     ]
+  },
+  "how": {
+    "title": "<span class=\"gradient-text\">How to Use Instagram</span> Anonymous Account Viewer Peekviewer",
+    "text": "So, in a few words, what is Peekviewer? It is a secret Instagram story viewer that allows people to use their right to privacy and stay on the crest of events. A great everyday helper, so to speak. You can start using it in 3 simple steps.",
+    "points": [
+      { "number": "1", "text": "Sign up and select the payment plan." },
+      { "number": "2", "text": "Paste their IG nickname or page link." },
+      { "number": "3", "text": "View private stories in a hidden mode." }
+    ]
   }
 }

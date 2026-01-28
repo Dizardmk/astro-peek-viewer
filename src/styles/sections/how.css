@@ -1,0 +1,5 @@
+.how {
+  background-image:
+    radial-gradient(circle at 50% 100%, #0049b5, #002b6b 30%, #1f1a22 55%),
+    linear-gradient(to bottom, #171a23, #171a23);
+}
