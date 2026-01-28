@@ -6,27 +6,27 @@ const s = data.why;
 <section class="why section">
   <div class="container">
     <!-- title -->
-    <h2 class="mb-6 section-title xl:mb-16" set:html={s.title} />
+    <h2 class="section-title mb-6 xl:mb-16" set:html={s.title} />
 
     <!-- list -->
     <ul
-      class="flex max-xl:flex-col items-start justify-start gap-8 xl:items-center xl:justify-center">
+      class="flex items-start justify-start gap-8 max-xl:flex-col xl:items-center xl:justify-center">
       {s.list.map((item) => <li class="xl:w-141">{item.text}</li>)}
     </ul>
 
     <!-- subtitle -->
     <h3
-      class="mt-6 mb-11 text-center xl:mt-16 text-[24px]/[1.2] font-semibold text-black">
+      class="mt-6 mb-11 text-center text-[24px]/[1.2] font-semibold text-black xl:mt-16">
       {s.subtitle}
     </h3>
 
     <!-- cards -->
     <ul
-      class="grid grid-cols-1 gap-4 xl:max-w-241 xl:mx-auto xl:grid-cols-2 xl:items-stretch">
+      class="grid grid-cols-1 gap-4 xl:mx-auto xl:max-w-241 xl:grid-cols-2 xl:items-stretch">
       {
         s.cards.map((card) => (
           // card
-          <li class="flex xl:h-full flex-col xl:p-8 items-start justify-start gap-4 rounded-3xl bg-card p-4 font-inter">
+          <li class="flex flex-col items-start justify-start gap-4 rounded-3xl bg-card p-4 font-inter xl:h-full xl:p-8">
             {/* wrapper for img and title */}
             <div class="flex items-center justify-start gap-3">
               {/* card image */}
@@ -39,7 +39,7 @@ const s = data.why;
                 loading="lazy"
               />
               {/* card title */}
-              <h4 class="text-black font-semibold text-[18px]/[1.4]">
+              <h4 class="text-[18px]/[1.4] font-semibold text-black">
                 {card.title}
               </h4>
             </div>

@@ -3,30 +3,30 @@ import data from "../data/index.json";
 const s = data.how;
 ---
 
-<section class="how section bg-black text-[#F0F1F2] xl:text-[#d4dcf3]">
+<section class="how bg-black section text-[#F0F1F2] xl:text-[#d4dcf3]">
   <div class="container">
     <!-- title -->
-    <h2 class="section-title text-white mb-6 xl:mb-12.5" set:html={s.title} />
+    <h2 class="section-title mb-6 text-white xl:mb-12.5" set:html={s.title} />
 
     <!-- wrapper -->
     <div class="xl:flex xl:items-center xl:justify-center xl:gap-26">
       <!-- wrapper -->
       <div
-        class="flex flex-col items-center xl:items-start xl:justify-start justify-center xl:w-123">
+        class="flex flex-col items-center justify-center xl:w-123 xl:items-start xl:justify-start">
         <!-- text -->
         <p>
           {s.text}
         </p>
         <!-- points -->
         <ul
-          class="mt-4 xl:mt-16 max-md:mb-1 xl:gap-11 flex flex-col gap-6 items-start justify-start">
+          class="mt-4 flex flex-col items-start justify-start gap-6 max-md:mb-1 xl:mt-16 xl:gap-11">
           {
             s.points.map((point) => (
               // point item
               <li class="flex items-center justify-center gap-5 font-inter">
                 {/* point number */}
                 <p
-                  class="shrink-0 px-5 md:w-23.5 py-3 flex text-white items-center justify-center w-13 h-11.5 bg-[#002b6b] rounded-full font-medium text-lg/[1] md:text-[#9dadff]"
+                  class="flex h-11.5 w-13 shrink-0 items-center justify-center rounded-full bg-[#002b6b] px-5 py-3 text-lg/[1] font-medium text-white md:w-23.5 md:text-[#9dadff]"
                   set:html={point.number}
                 />
                 {/* point text */}
@@ -45,7 +45,7 @@ const s = data.how;
           srcset="/images/how/image-xl.png"
         />
         <img
-          class="xl:w-94.5 xl:h-auto max-xl:mx-auto"
+          class="max-xl:mx-auto xl:h-auto xl:w-94.5"
           src="/images/how/image-sm.png"
           title="iphone with Peekviewer Instagram Story Viewer app"
           alt="iphone with Peekviewer Instagram Story Viewer app"
