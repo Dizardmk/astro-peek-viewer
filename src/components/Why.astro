@@ -6,25 +6,27 @@ const s = data.why;
 <section class="why section">
   <div class="container">
     <!-- title -->
-    <h2 class="mb-6 section-title text-balance" set:html={s.title} />
+    <h2 class="mb-6 section-title xl:mb-16" set:html={s.title} />
 
     <!-- list -->
-    <ul class="flex flex-col items-start justify-start gap-8 text-balance">
-      {s.list.map((item) => <li>{item.text}</li>)}
+    <ul
+      class="flex max-xl:flex-col items-start justify-start gap-8 xl:items-center xl:justify-center">
+      {s.list.map((item) => <li class="xl:w-141">{item.text}</li>)}
     </ul>
 
     <!-- subtitle -->
     <h3
-      class="mt-6 mb-11 text-center text-[24px]/[1.2] font-semibold text-balance text-black">
+      class="mt-6 mb-11 text-center xl:mt-16 text-[24px]/[1.2] font-semibold text-black">
       {s.subtitle}
     </h3>
 
     <!-- cards -->
-    <ul class="flex flex-col gap-4 items-center justify-center">
+    <ul
+      class="max-xl:flex max-xl:flex-col gap-4 items-start justify-center xl:grid xl:grid-cols-2 xl:items-stretch">
       {
         s.cards.map((card) => (
           // card
-          <li class="flex flex-col items-start justify-start gap-4 rounded-3xl bg-card p-4 font-inter">
+          <li class="flex xl:min-h-60 xl:h-full xl:w-118.5 flex-col xl:p-8 items-start justify-start gap-4 rounded-3xl bg-card p-4 font-inter">
             {/* wrapper for img and title */}
             <div class="flex items-center justify-start gap-3">
               {/* card image */}
@@ -43,7 +45,7 @@ const s = data.why;
             </div>
 
             {/* card text */}
-            <p class="">{card.text}</p>
+            <p class="xl:text-base/normal">{card.text}</p>
           </li>
         ))
       }

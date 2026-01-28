@@ -39,7 +39,7 @@
 }
 
 @utility section-title {
-  @apply text-center text-[28px]/[1.2] font-semibold text-black xl:w-3xl xl:text-[36px]/[1.2];
+  @apply text-center text-[28px]/[1.2] font-semibold text-black md:max-xl:text-balance xl:mx-auto xl:w-3xl xl:text-[36px]/[1.2];
 }
 
 @utility gradient-text {
