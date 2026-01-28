@@ -3,48 +3,57 @@ import data from "../data/index.json";
 const s = data.how;
 ---
 
-<section class="how section bg-black text-white">
+<section class="how section bg-black text-[#F0F1F2] xl:text-[#d4dcf3]">
   <div class="container">
-    <!-- wrapper -->
-    <div class="">
-      <!-- title -->
-      <h2 class="section-title text-white mb-6" set:html={s.title} />
-      <!-- text -->
-      <p class="">
-        {s.text}
-      </p>
-      <!-- points -->
-      <ul
-        class="mt-4 mb-1 flex flex-col gap-6 items-start justify-start w-fit mx-auto">
-        {
-          s.points.map((point) => (
-            <li class="flex items-center justify-center gap-5 font-inter">
-              <p class="shrink-0 p-2 flex items-center justify-center w-13 h-11.5 bg-[#002b6b] rounded-full font-medium text-lg/[1]">
-                {point.number}
-              </p>
-              <p class="text-[18px]/[1.6]">{point.text}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+    <!-- title -->
+    <h2 class="section-title text-white mb-6 xl:mb-12.5" set:html={s.title} />
 
-    <!-- image -->
-    <picture>
-      <source
-        type="image/webp"
-        media="(min-width: 768px)"
-        srcset="/images/how/image-md.png"
-      />
-      <img
-        class="xl:w-94.5 mx-auto"
-        src="/images/how/image-sm.png"
-        title="iphone with Peekviewer Instagram Story Viewer app"
-        alt="iphone with Peekviewer Instagram Story Viewer app"
-        width="310"
-        height="611"
-        loading="lazy"
-      />
-    </picture>
+    <!-- wrapper -->
+    <div class="xl:flex xl:items-center xl:justify-center xl:gap-26">
+      <!-- wrapper -->
+      <div
+        class="flex flex-col items-center xl:items-start xl:justify-start justify-center xl:w-123">
+        <!-- text -->
+        <p>
+          {s.text}
+        </p>
+        <!-- points -->
+        <ul
+          class="mt-4 xl:mt-16 max-md:mb-1 flex flex-col gap-6 items-start justify-start">
+          {
+            s.points.map((point) => (
+              // point item
+              <li class="flex items-center justify-center gap-5 font-inter">
+                {/* point number */}
+                <p
+                  class="shrink-0 px-5 md:w-23.5 py-3 flex text-white items-center justify-center w-13 h-11.5 bg-[#002b6b] rounded-full font-medium text-lg/[1] md:text-[#9dadff]"
+                  set:html={point.number}
+                />
+                {/* point text */}
+                <p class="text-[18px]/[1.6]">{point.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <!-- image -->
+      <picture>
+        <source
+          type="image/webp"
+          media="(min-width: 1280px)"
+          srcset="/images/how/image-xl.png"
+        />
+        <img
+          class="xl:w-94.5 xl:h-auto max-xl:mx-auto"
+          src="/images/how/image-sm.png"
+          title="iphone with Peekviewer Instagram Story Viewer app"
+          alt="iphone with Peekviewer Instagram Story Viewer app"
+          width="310"
+          height="611"
+          loading="lazy"
+        />
+      </picture>
+    </div>
   </div>
 </section>
