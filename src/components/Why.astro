@@ -22,11 +22,11 @@ const s = data.why;
 
     <!-- cards -->
     <ul
-      class="max-xl:flex max-xl:flex-col gap-4 items-start justify-center xl:grid xl:grid-cols-2 xl:items-stretch">
+      class="grid grid-cols-1 gap-4 xl:max-w-241 xl:mx-auto xl:grid-cols-2 xl:items-stretch">
       {
         s.cards.map((card) => (
           // card
-          <li class="flex xl:min-h-60 xl:h-full xl:w-118.5 flex-col xl:p-8 items-start justify-start gap-4 rounded-3xl bg-card p-4 font-inter">
+          <li class="flex xl:h-full flex-col xl:p-8 items-start justify-start gap-4 rounded-3xl bg-card p-4 font-inter">
             {/* wrapper for img and title */}
             <div class="flex items-center justify-start gap-3">
               {/* card image */}
