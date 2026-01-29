@@ -40,7 +40,7 @@ const s = data.advantages;
               </div>
 
               {/* card text */}
-              <h4 class="text-center text-[#3c3a4f]">{card.text}</h4>
+              <p class="text-center text-[#3c3a4f]">{card.text}</p>
             </li>
           ))
         }
@@ -48,11 +48,17 @@ const s = data.advantages;
 
       <!-- If we need navigation buttons -->
       <div class="mx-auto flex w-full items-center justify-center gap-2">
-        <button class="button-prev slider-btn" type="button"
-          ><Fragment set:html={Arrow} />
+        <button
+          class="button-prev slider-btn"
+          type="button"
+          aria-label="Previous slide">
+          <Fragment set:html={Arrow} />
         </button>
-        <button class="button-next rotate-180 slider-btn" type="button"
-          ><Fragment set:html={Arrow} />
+        <button
+          class="button-next rotate-180 slider-btn"
+          type="button"
+          aria-label="Next slide">
+          <Fragment set:html={Arrow} />
         </button>
       </div>
     </div>
@@ -90,13 +96,13 @@ const s = data.advantages;
                   loading="lazy"
                 />
                 {/* card title */}
-                <h3 class="text-[18px]/[1.2] font-semibold text-[#05012c]">
+                <h4 class="text-[18px]/[1.2] font-semibold text-[#05012c]">
                   {review.title}
-                </h3>
+                </h4>
               </div>
 
               {/* card text */}
-              <h4 class="text-base/normal text-gray">{review.text}</h4>
+              <p class="text-base/normal text-gray">{review.text}</p>
             </li>
           ))
         }
@@ -104,11 +110,17 @@ const s = data.advantages;
 
       <!-- If we need navigation buttons -->
       <div class="mx-auto flex w-full items-center justify-center gap-2">
-        <button class="button-prev slider-btn" type="button"
-          ><Fragment set:html={Arrow} />
+        <button
+          class="button-prev slider-btn"
+          type="button"
+          aria-label="Previous review">
+          <Fragment set:html={Arrow} />
         </button>
-        <button class="button-next rotate-180 slider-btn" type="button"
-          ><Fragment set:html={Arrow} />
+        <button
+          class="button-next rotate-180 slider-btn"
+          type="button"
+          aria-label="Next review">
+          <Fragment set:html={Arrow} />
         </button>
       </div>
     </div>
@@ -124,7 +136,7 @@ const s = data.advantages;
 
   document.addEventListener("DOMContentLoaded", () => {
     // Cards Swiper
-    new Swiper(" .cards-swiper", {
+    new Swiper(".cards-swiper", {
       modules: [Navigation],
       navigation: {
         nextEl: ".cards-swiper .button-next",
@@ -150,7 +162,7 @@ const s = data.advantages;
     });
 
     // Reviews Swiper
-    new Swiper(" .reviews-swiper", {
+    new Swiper(".reviews-swiper", {
       modules: [Navigation],
       navigation: {
         nextEl: ".reviews-swiper .button-next",
