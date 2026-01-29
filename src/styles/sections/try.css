@@ -3,6 +3,16 @@
     radial-gradient(circle at 50% 0%, #0049b5, #002b6b 28%, #1f1a22 51%),
     linear-gradient(to bottom, #171a23, #171a23);
 
-  /* .try-wrapper {
-  } */
+  @variant xl {
+    @apply bg-none;
+  }
+
+  .try-wrapper {
+    background: radial-gradient(
+      99.96% 100% at 50% 0,
+      #0049b5,
+      #002b6b 30.04%,
+      #1f1a22 55.26%
+    );
+  }
 }

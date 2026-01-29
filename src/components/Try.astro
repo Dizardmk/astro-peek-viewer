@@ -3,15 +3,15 @@ import data from "../data/index.json";
 const s = data.try;
 ---
 
-<section class="try mb-10 bg-black text-[#f0f1f2]">
+<section class="try mb-10 text-[#f0f1f2] max-xl:bg-black">
   <div class="container">
     <!-- wrapper -->
     <div
-      class="try-wrapper flex flex-col items-center justify-center py-16 text-center">
+      class="try-wrapper flex flex-col items-center justify-center py-16 text-center xl:mx-auto xl:w-241 xl:rounded-4xl xl:bg-black xl:px-24.5">
       <!-- title -->
       <h2 class="section-title mb-6 text-white" set:html={s.title} />
       <!-- text -->
-      <p class="font-inter">{s.text}</p>
+      <p class="font-inter md:max-xl:text-balance xl:max-w-142.5">{s.text}</p>
       <!-- button -->
       <a class="mt-8 btn w-46" href={s.btn.link}>{s.btn.title}</a>
     </div>
