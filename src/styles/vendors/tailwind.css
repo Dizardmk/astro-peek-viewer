@@ -50,3 +50,7 @@
 @utility btn {
   @apply flex min-h-14 w-full items-center justify-center truncate rounded-full bg-accent px-10 py-3.75 text-center text-[18px]/[1.4] font-semibold text-white duration-300 hover:bg-accent/80 focus:bg-accent/80 active:bg-accent/50;
 }
+
+@utility slider-btn {
+  @apply rounded-2xl border border-[#cdd1df] p-3 duration-300 hover:bg-black/5 focus:bg-black/5 active:border-accent active:bg-card;
+}

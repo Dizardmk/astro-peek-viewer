@@ -8,11 +8,13 @@
   }
 
   .try-wrapper {
-    background: radial-gradient(
-      99.96% 100% at 50% 0,
-      #0049b5,
-      #002b6b 30.04%,
-      #1f1a22 55.26%
-    );
+    @variant xl {
+      background: radial-gradient(
+        99.96% 100% at 50% 0,
+        #0049b5,
+        #002b6b 30.04%,
+        #1f1a22 55.26%
+      );
+    }
   }
 }
