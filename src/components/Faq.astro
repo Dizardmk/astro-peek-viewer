@@ -48,7 +48,7 @@ const s = data.faq;
 <script>
   createAccordion(".faq__question", ".faq__answer");
 
-  function createAccordion(question, answer) {
+  function createAccordion(question: string, answer: string) {
     const questions = document.querySelectorAll(question);
 
     questions.forEach((item, index) => {
