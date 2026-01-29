@@ -21,7 +21,7 @@ const s = data.advantages;
         {
           s.cards.map((card) => (
             // card item
-            <li class="swiper-slide flex! h-auto! flex-col! items-start! justify-start! gap-3! rounded-2xl! bg-card! p-4! font-inter!">
+            <li class="swiper-slide flex! h-auto! flex-col gap-3! rounded-2xl bg-card p-4 font-inter xl:w-97.25! xl:p-8">
               {/* wrapper */}
               <div class="mx-auto flex flex-col items-center justify-center gap-6">
                 {/* card image */}
@@ -81,17 +81,21 @@ const s = data.advantages;
         nextEl: ".advantages .button-next",
         prevEl: ".advantages .button-prev",
       },
+      centeredSlides: true,
       loop: true,
-      grabCursor: true,
       spaceBetween: 20,
+      updateOnWindowResize: true,
       breakpoints: {
         768: {
           slidesPerView: 2,
-          spaceBetween: 32,
+          spaceBetween: 16,
         },
         1280: {
-          slidesPerView: 3,
-          width: 376,
+          grabCursor: true,
+          initialSlide: 2,
+          loop: false,
+          slidesPerView: "auto",
+          spaceBetween: 16,
         },
       },
     });
