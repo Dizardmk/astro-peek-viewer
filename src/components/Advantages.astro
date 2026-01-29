@@ -57,13 +57,61 @@ const s = data.advantages;
       </div>
     </div>
 
+    <!-- button -->
+    <a
+      class="mt-6 mb-10 btn xl:mx-auto xl:mt-8 xl:mb-20 xl:w-46"
+      href={s.btn.link}>{s.btn.title}</a
+    >
+
     <!-- subtitle -->
     <h3
-      class="mt-6 mb-11 text-center text-[24px]/[1.2] font-semibold text-black xl:mt-16">
+      class="mb-11 text-center text-[28px]/[1.2] font-semibold text-black xl:mt-16">
       {s.subtitle}
     </h3>
 
-    <!-- reviews -->
+    <!-- reviews swiper -->
+    <div class="reviews-swiper">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper mb-8">
+        <!-- Slides -->
+        {
+          s.reviews.map((review) => (
+            // card item
+            <li class="swiper-slide flex! h-auto! flex-col gap-5! rounded-[20px] bg-card p-4 font-inter xl:w-94! xl:p-8">
+              {/* wrapper */}
+              <div class="flex items-center justify-start gap-3">
+                {/* card image */}
+                <img
+                  src={review.img}
+                  title={review.alt}
+                  alt={review.alt}
+                  width="48"
+                  height="48"
+                  loading="lazy"
+                />
+                {/* card title */}
+                <h3 class="text-[18px]/[1.2] font-semibold text-[#05012c]">
+                  {review.title}
+                </h3>
+              </div>
+
+              {/* card text */}
+              <h4 class="text-base/normal text-gray">{review.text}</h4>
+            </li>
+          ))
+        }
+      </ul>
+
+      <!-- If we need navigation buttons -->
+      <div class="mx-auto flex w-full items-center justify-center gap-2">
+        <button class="button-prev slider-btn" type="button"
+          ><Fragment set:html={Arrow} />
+        </button>
+        <button class="button-next rotate-180 slider-btn" type="button"
+          ><Fragment set:html={Arrow} />
+        </button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -75,6 +123,7 @@ const s = data.advantages;
   // https://swiperjs.com/swiper-api#parameters
 
   document.addEventListener("DOMContentLoaded", () => {
+    // Cards Swiper
     new Swiper(" .cards-swiper", {
       modules: [Navigation],
       navigation: {
@@ -95,6 +144,28 @@ const s = data.advantages;
           initialSlide: 2,
           loop: false,
           slidesPerView: "auto",
+          spaceBetween: 16,
+        },
+      },
+    });
+
+    // Reviews Swiper
+    new Swiper(" .reviews-swiper", {
+      modules: [Navigation],
+      navigation: {
+        nextEl: ".reviews-swiper .button-next",
+        prevEl: ".reviews-swiper .button-prev",
+      },
+      spaceBetween: 20,
+      updateOnWindowResize: true,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1280: {
+          grabCursor: true,
+          slidesPerView: 3,
           spaceBetween: 16,
         },
       },

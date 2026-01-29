@@ -98,40 +98,44 @@
         "text": "This feature sets Peekviewer apart from many other incognito Instagram story viewer apps. You can download all the content you view from the page in the same quality. It's perfect for when you need long-term access to tracked content"
       }
     ],
+    "btn": {
+      "title": "Watch now",
+      "link": "#"
+    },
     "subtitle": "Our customers talk about us",
     "reviews": [
       {
-        "img": "/images/advantages/emily.png",
+        "img": "/images/advantages/emily.webp",
         "alt": "photo of Emily Kim",
         "title": "Emily Kim",
         "text": "I could not complete the payment process for this viewer and then asked for help. The guys answered immediately! They explained to me what the problem was and how to solve it with my bank."
       },
       {
-        "img": "/images/advantages/ryan.png",
+        "img": "/images/advantages/ryan.webp",
         "alt": "photo of Ryan N.",
         "title": "Ryan N.",
         "text": "My competitors started to go on the offensive. And my business partner recommended Peekviewer. The price for this app is not high, but the results I've got are great! I'm surprised."
       },
       {
-        "img": "/images/advantages/zoe.png",
+        "img": "/images/advantages/zoe.webp",
         "alt": "photo of Zoe W.",
         "title": "Zoe W.",
         "text": "I'm a skeptic by nature. I must confess that I wasn't expecting this story viewer to be useful. It really works and is easy to use. I really like that stories are saved for a long time so that I can check them whenever needed."
       },
       {
-        "img": "/images/advantages/sophia.png",
+        "img": "/images/advantages/sophia.webp",
         "alt": "photo of Sophia Delgado",
         "title": "Sophia Delgado",
         "text": "Honestly saying, I couldn't act another way. My kid has started to use social media too often and behaves differently than usual. This profile viewer will help find out the reason."
       },
       {
-        "img": "/images/advantages/ethan.png",
+        "img": "/images/advantages/ethan.webp",
         "alt": "photo of Ethan Harris",
         "title": "Ethan Harris",
         "text": "I know that it is not an honest way to act, but I decided to find out the truth through the social media story viewer. My wife is communicating with some strangers online. And I want to dispel suspicions."
       },
       {
-        "img": "/images/advantages/nicole.png",
+        "img": "/images/advantages/nicole.webp",
         "alt": "photo of Nicole T.",
         "title": "Nicole T.",
         "text": "I think that anonymous profile viewer is the number one way to find out if your spouse is hiding something from you. I was in such a situation, and I know what I'm talking about. Peekviewer shed light on my relationship."
