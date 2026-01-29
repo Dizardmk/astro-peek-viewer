@@ -9,18 +9,19 @@ const s = data.faq;
     <h2 class="section-title mb-8">{s.title}</h2>
 
     <!-- list -->
-    <ul class="flex flex-col items-center justify-center gap-5">
+    <ul
+      class="flex flex-col items-center justify-center gap-5 xl:mx-auto xl:w-3xl">
       {
         s.list.map((item) => (
           // faq item
           <li
-            class="faq__question relative flex w-full cursor-pointer flex-col items-start justify-center overflow-hidden rounded-2xl border border-[#cdd1df] bg-white py-3 pr-3 pl-11 duration-300 hover:bg-black/5 focus:bg-black/5 md:py-4 md:pr-4"
+            class="faq__question relative flex w-full cursor-pointer flex-col items-start justify-center overflow-hidden rounded-2xl border border-[#cdd1df] bg-white py-3 pr-3 pl-11 duration-300 hover:bg-black/5 focus:bg-black/5 md:py-4 md:pr-4 xl:pl-13"
             aria-expanded="false">
             {/* question wrapper */}
             <div class="flex w-full items-start justify-start">
               {/* question icon */}
               <img
-                class="faq__icon absolute top-3 left-3 duration-300 md:top-3.5 md:left-4"
+                class="faq__icon absolute top-3 left-3 duration-300 md:top-4 md:left-4"
                 src="/images/faq/arrow.svg"
                 title="arrow"
                 alt="arrow"
@@ -34,7 +35,7 @@ const s = data.faq;
             </div>
 
             {/* answer */}
-            <h4 class="faq__answer max-h-0 w-full cursor-auto overflow-hidden text-[14px]/[1.4] duration-300">
+            <h4 class="faq__answer max-h-0 w-full cursor-auto overflow-hidden text-[14px]/[1.4] duration-300 xl:text-base/normal">
               {item.answer}
             </h4>
           </li>
