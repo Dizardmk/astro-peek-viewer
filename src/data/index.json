@@ -50,15 +50,15 @@
     "text": "So, in a few words, what is Peekviewer? It is a secret Instagram story viewer that allows people to use their right to privacy and stay on the crest of events. A great everyday helper, so to speak. You can start using it in 3 simple steps.",
     "points": [
       {
-        "number": "<span class=\"hidden md:block\">Step</span>&nbsp;1",
+        "number": "<span class=\"hidden md:block\">Step&nbsp;</span>1",
         "text": "Sign up and select the payment plan."
       },
       {
-        "number": "<span class=\"hidden md:block\">Step</span>&nbsp;2",
+        "number": "<span class=\"hidden md:block\">Step&nbsp;</span>2",
         "text": "Paste their IG nickname or page link."
       },
       {
-        "number": "<span class=\"hidden md:block\">Step</span>&nbsp;3",
+        "number": "<span class=\"hidden md:block\">Step&nbsp;</span>3",
         "text": "View private stories in a hidden mode."
       }
     ]
