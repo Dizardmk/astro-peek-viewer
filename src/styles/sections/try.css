@@ -1,0 +1,8 @@
+.try {
+  background-image:
+    radial-gradient(circle at 50% 0%, #0049b5, #002b6b 28%, #1f1a22 51%),
+    linear-gradient(to bottom, #171a23, #171a23);
+
+  /* .try-wrapper {
+  } */
+}

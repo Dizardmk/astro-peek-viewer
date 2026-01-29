@@ -25,7 +25,8 @@
     @apply bg-body font-poppins text-base/normal font-normal text-gray xl:text-lg/normal;
   }
 
-  button {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
     @apply cursor-pointer;
   }
 }
@@ -47,5 +48,5 @@
 }
 
 @utility btn {
-  @apply flex min-h-14 w-full items-center justify-center truncate rounded-full bg-accent px-10 py-3.75 text-center font-semibold text-white duration-300 hover:bg-accent/80 focus:bg-accent/80 active:bg-accent/50;
+  @apply flex min-h-14 w-full items-center justify-center truncate rounded-full bg-accent px-10 py-3.75 text-center text-[18px]/[1.4] font-semibold text-white duration-300 hover:bg-accent/80 focus:bg-accent/80 active:bg-accent/50;
 }
