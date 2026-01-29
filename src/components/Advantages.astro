@@ -1,11 +1,9 @@
 ---
-import "swiper/css";
-
 import data from "../data/index.json";
 const s = data.advantages;
 ---
 
-<section class="advantages section">
+<section class="advantages overflow-hidden section">
   <div class="container">
     <!-- title -->
     <h2 class="section-title mb-6 xl:mb-16" set:html={s.title} />
@@ -14,23 +12,18 @@ const s = data.advantages;
     <p>{s.text}</p>
 
     <!-- cards swiper -->
-    <div class="swiper">
+    <div class="swiper-container">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper">
         <!-- Slides -->
         <div class="swiper-slide">Slide 1</div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        ...
       </div>
 
       <!-- If we need navigation buttons -->
-      <div class="mt-16 size-fit">
-        <button class="swiper-button-prev" type="button">---</button>
-        <button class="swiper-button-next" type="button">+++</button>
-      </div>
+      <div class="button-prev"></div>
+      <div class="button-next"></div>
     </div>
 
     <!-- subtitle -->
@@ -46,17 +39,20 @@ const s = data.advantages;
 <script>
   import Swiper from "swiper";
   import { Navigation } from "swiper/modules";
+  import "swiper/css";
 
   // https://swiperjs.com/swiper-api#parameters
 
   document.addEventListener("DOMContentLoaded", () => {
-    // cards swiper:
-    const cardsSwiper = new Swiper(".swiper", {
-      // configure Swiper to use modules
+    new Swiper(".advantages .swiper-container", {
       modules: [Navigation],
+      navigation: {
+        nextEl: ".advantages. .button-next",
+        prevEl: ".advantages .button-prev",
+      },
       loop: true,
-      grabCursor: true, // Default: false (boolean). This option may a little improve desktop usability. If true, user will see the "grab" cursor when hover on Swiper.
-      spaceBetween: 20, // Default: 0 (string | number). Distance between slides in px.
+      grabCursor: true,
+      spaceBetween: 20,
       breakpoints: {
         768: {
           slidesPerView: 2,
@@ -64,11 +60,8 @@ const s = data.advantages;
         },
         1280: {
           slidesPerView: 3,
+          width: 376,
         },
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
       },
     });
   });
