@@ -53,4 +53,8 @@
 
 @utility slider-btn {
   @apply rounded-2xl border border-[#cdd1df] p-3 duration-300 hover:bg-black/5 focus:bg-black/5 active:border-accent active:bg-card;
+
+  &.swiper-button-disabled {
+    @apply cursor-not-allowed opacity-20;
+  }
 }

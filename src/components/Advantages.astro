@@ -14,7 +14,7 @@ const s = data.advantages;
     <p class="mb-6">{s.text}</p>
 
     <!-- cards swiper -->
-    <div class="swiper-container">
+    <div class="cards-swiper">
       <!-- Additional required wrapper -->
       <ul class="swiper-wrapper mb-6">
         <!-- Slides -->
@@ -75,11 +75,11 @@ const s = data.advantages;
   // https://swiperjs.com/swiper-api#parameters
 
   document.addEventListener("DOMContentLoaded", () => {
-    new Swiper(".advantages .swiper-container", {
+    new Swiper(" .cards-swiper", {
       modules: [Navigation],
       navigation: {
-        nextEl: ".advantages .button-next",
-        prevEl: ".advantages .button-prev",
+        nextEl: ".cards-swiper .button-next",
+        prevEl: ".cards-swiper .button-prev",
       },
       centeredSlides: true,
       loop: true,
