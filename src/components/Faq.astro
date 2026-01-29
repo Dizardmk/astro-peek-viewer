@@ -3,24 +3,24 @@ import data from "../data/index.json";
 const s = data.faq;
 ---
 
-<section class="faq section">
+<section class="faq bg-card section">
   <div class="container">
     <!-- title -->
-    <h2 class="section-title">{s.title}</h2>
+    <h2 class="section-title mb-8">{s.title}</h2>
 
     <!-- list -->
-    <ul class="flex flex-col items-center justify-center gap-4">
+    <ul class="flex flex-col items-center justify-center gap-5">
       {
         s.list.map((item) => (
           // faq item
           <li
-            class="faq__question relative flex w-full cursor-pointer flex-col items-start justify-center overflow-hidden rounded-2xl border border-[#cdd1df] bg-card p-3 pl-11 duration-300 hover:bg-card/80 focus:bg-card/80"
+            class="faq__question relative flex w-full cursor-pointer flex-col items-start justify-center overflow-hidden rounded-2xl border border-[#cdd1df] bg-white py-3 pr-3 pl-11 duration-300 hover:bg-black/5 focus:bg-black/5 md:py-4 md:pr-4"
             aria-expanded="false">
             {/* question wrapper */}
             <div class="flex w-full items-start justify-start">
               {/* question icon */}
               <img
-                class="faq__icon absolute top-3 left-3"
+                class="faq__icon absolute top-3 left-3 duration-300 md:top-3.5 md:left-4"
                 src="/images/faq/arrow.svg"
                 title="arrow"
                 alt="arrow"
@@ -28,12 +28,13 @@ const s = data.faq;
                 height="24"
                 loading="lazy"
               />
+
               {/* question title */}
-              <h3 class="font-medium">{item.question}</h3>
+              <h3 class="font-semibold text-[#2d3035]">{item.question}</h3>
             </div>
 
             {/* answer */}
-            <h4 class="faq__answer max-h-0 w-full cursor-auto overflow-hidden duration-300">
+            <h4 class="faq__answer max-h-0 w-full cursor-auto overflow-hidden text-[14px]/[1.4] duration-300">
               {item.answer}
             </h4>
           </li>

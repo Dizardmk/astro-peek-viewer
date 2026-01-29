@@ -1,9 +1,9 @@
 .faq__question {
   &[aria-expanded="true"] .faq__answer {
-    @apply mt-4 xl:mt-8;
+    @apply mt-2 md:mt-3;
   }
 
   &[aria-expanded="true"] .faq__icon {
-    @apply rotate-90;
+    @apply rotate-180;
   }
 }
