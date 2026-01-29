@@ -1,0 +1,87 @@
+---
+import data from "../data/index.json";
+const s = data.faq;
+---
+
+<section class="faq section">
+  <div class="container">
+    <!-- title -->
+    <h2 class="section-title">{s.title}</h2>
+
+    <!-- list -->
+    <ul class="flex flex-col items-center justify-center gap-4">
+      {
+        s.list.map((item) => (
+          // faq item
+          <li
+            class="faq__question relative flex w-full cursor-pointer flex-col items-start justify-center overflow-hidden rounded-2xl border border-[#cdd1df] bg-card p-3 pl-11 duration-300 hover:bg-card/80 focus:bg-card/80"
+            aria-expanded="false">
+            {/* question wrapper */}
+            <div class="flex w-full items-start justify-start">
+              {/* question icon */}
+              <img
+                class="faq__icon absolute top-3 left-3"
+                src="/images/faq/arrow.svg"
+                title="arrow"
+                alt="arrow"
+                width="24"
+                height="24"
+                loading="lazy"
+              />
+              {/* question title */}
+              <h3 class="font-medium">{item.question}</h3>
+            </div>
+
+            {/* answer */}
+            <h4 class="faq__answer max-h-0 w-full cursor-auto overflow-hidden duration-300">
+              {item.answer}
+            </h4>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<script>
+  createAccordion(".faq__question", ".faq__answer");
+
+  function createAccordion(question, answer) {
+    const questions = document.querySelectorAll(question);
+
+    questions.forEach((item, index) => {
+      item.addEventListener("click", toggleAccordion);
+
+      // Always open the first element
+      if (index === 0) {
+        item.setAttribute("aria-expanded", "true");
+        const accordionAnswer = item.querySelector(answer);
+        // Use setTimeout to ensure the height is calculated after rendering
+        setTimeout(() => {
+          accordionAnswer.style.maxHeight =
+            accordionAnswer.scrollHeight * 2 + "px";
+        }, 0);
+      }
+    });
+
+    function toggleAccordion(e) {
+      const currentTarget = e.currentTarget;
+      const target = e.target;
+      const ariaExpanded = currentTarget.getAttribute("aria-expanded");
+      const accordionAnswer = currentTarget.querySelector(answer);
+
+      if (target.closest(answer)) {
+        return;
+      }
+
+      if (ariaExpanded === "false") {
+        currentTarget.setAttribute("aria-expanded", "true");
+        accordionAnswer.style.maxHeight =
+          accordionAnswer.scrollHeight * 2 + "px";
+      } else {
+        currentTarget.setAttribute("aria-expanded", "false");
+        accordionAnswer.style.maxHeight = 0;
+      }
+    }
+  }
+</script>
